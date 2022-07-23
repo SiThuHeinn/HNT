@@ -58,7 +58,7 @@ class HomeFragment : Fragment() {
         lifecycleScope.launchWhenStarted {
             viewModel.state.collect {
                 if (it.isNotEmpty()) {
-                    Snackbar.make(view, "Success $it", Snackbar.LENGTH_LONG).show()
+                    Snackbar.make(binding.root, "Success $it", Snackbar.LENGTH_LONG).show()
                 }
             }
         }

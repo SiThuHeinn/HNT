@@ -9,76 +9,90 @@
     app:cardCornerRadius="10dp"
     >
 
-
-  <RelativeLayout
+  <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:padding="20dp">
+      android:layout_height="wrap_content">
+
 
     <TextView
-        android:id="@+id/userIdLabel"
+        android:id="@+id/labelUserId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User ID: "
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/userid"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         />
 
     <TextView
         android:id="@+id/userId"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/userIdLabel"
-        tools:text="1"
+        android:layout_marginStart="5dp"
+        android:lines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/labelUserId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/labelUserId"
+        app:layout_constraintTop_toTopOf="@+id/labelUserId"
+        tools:text="1202"
         />
 
 
     <TextView
-        android:id="@+id/titleLabel"
+        android:id="@+id/labelTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/userIdLabel"
-        android:layout_alignStart="@+id/userIdLabel"
-        android:layout_marginStart="10dp"
-        android:text="Title: "
-        android:textAlignment="textStart"
+        android:layout_marginTop="5dp"
+        android:text="@string/title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelUserId"
+        app:layout_constraintTop_toBottomOf="@+id/labelUserId"
         />
-
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/userIdLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
         android:lines="1"
-        android:layout_centerHorizontal="true"
-        android:layout_toEndOf="@id/titleLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/labelTitle"
+        app:layout_constraintTop_toBottomOf="@+id/userId"
         tools:text="This is title."
         />
-
-
     <TextView
-        android:id="@+id/bodyLabel"
+        android:id="@+id/labelBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAlignment="textStart"
-        android:layout_below="@id/titleLabel"
-        android:layout_centerHorizontal="true"
-        android:text="Title: "
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/body"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/labelTitle"
+        app:layout_constraintTop_toBottomOf="@+id/labelTitle"
         />
-
 
     <TextView
         android:id="@+id/body"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/titleLabel"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
         android:lines="1"
-        android:layout_toEndOf="@id/bodyLabel"
-        tools:text="This is title."
+        app:layout_constraintBottom_toBottomOf="@+id/labelBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/labelBody"
+        tools:text="This is body"
         />
 
 
-  </RelativeLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
