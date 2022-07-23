@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="8dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    >
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="20dp">
+
+    <TextView
+        android:id="@+id/userIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID: "
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/userIdLabel"
+        tools:text="1"
+        />
+
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userIdLabel"
+        android:layout_alignStart="@+id/userIdLabel"
+        android:layout_marginStart="10dp"
+        android:text="Title: "
+        android:textAlignment="textStart"
+        />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userIdLabel"
+        android:lines="1"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/titleLabel"
+        tools:text="This is title."
+        />
+
+
+    <TextView
+        android:id="@+id/bodyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:layout_below="@id/titleLabel"
+        android:layout_centerHorizontal="true"
+        android:text="Title: "
+        />
+
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLabel"
+        android:layout_centerHorizontal="true"
+        android:lines="1"
+        android:layout_toEndOf="@id/bodyLabel"
+        tools:text="This is title."
+        />
+
+
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

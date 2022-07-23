@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment2">
+  <fragment
+      android:id="@+id/homeFragment2"
+      android:name="com.sithuhein.mm.hanacodetest.presentation.ui.home.HomeFragment"
+      android:label="HomeFragment" >
+    <action
+        android:id="@+id/action_homeFragment2_to_responseOneFragment"
+        app:destination="@id/responseOneFragment" />
+    <action
+        android:id="@+id/action_homeFragment2_to_responseTwoFragment"
+        app:destination="@id/responseTwoFragment" />
+    <action
+        android:id="@+id/action_homeFragment2_to_sendRequestFragment"
+        app:destination="@id/sendRequestFragment" />
+  </fragment>
+  <fragment
+      android:id="@+id/responseOneFragment"
+      android:name="com.sithuhein.mm.hanacodetest.presentation.ui.responseone.ResponseOneFragment"
+      android:label="fragment_response_one"
+      tools:layout="@layout/fragment_response_one" >
+    <action
+        android:id="@+id/action_responseOneFragment_to_homeFragment2"
+        app:destination="@id/homeFragment2" />
+  </fragment>
+  <fragment
+      android:id="@+id/responseTwoFragment"
+      android:name="com.sithuhein.mm.hanacodetest.presentation.ui.responsetwo.ResponseTwoFragment"
+      android:label="fragment_response_two"
+      tools:layout="@layout/fragment_response_two" >
+    <action
+        android:id="@+id/action_responseTwoFragment_to_homeFragment2"
+        app:destination="@id/homeFragment2" />
+  </fragment>
+  <fragment
+      android:id="@+id/sendRequestFragment"
+      android:name="com.sithuhein.mm.hanacodetest.presentation.ui.request.SendRequestFragment"
+      android:label="fragment_send_request"
+      tools:layout="@layout/fragment_send_request" >
+    <action
+        android:id="@+id/action_sendRequestFragment_to_homeFragment2"
+        app:destination="@id/homeFragment2" />
+  </fragment>
+</navigation>

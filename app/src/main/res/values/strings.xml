@@ -1,3 +1,16 @@
 <resources>
   <string name="app_name">HanaCodeTest</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="hana_code_test">Hana Code Test</string>
+  <string name="download_data_1">Download Data 1</string>
+  <string name="show_data_1">Show Data 1</string>
+  <string name="download_data_2">Download Data 2</string>
+  <string name="show_data_2">Show Data 2</string>
+  <string name="add_data">Add Data</string>
+  <string name="show_log">Show Log</string>
+  <string name="title">TITLE:</string>
+  <string name="body">Body:</string>
+  <string name="userid">UserID:</string>
+  <string name="home">Home</string>
 </resources>
